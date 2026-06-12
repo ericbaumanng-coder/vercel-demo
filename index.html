@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Projet — Déployé sur Vercel</title>
+  <meta name="description" content="Premier projet déployé sur Vercel avec Claude Code." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="hero">
+    <div class="badge">▲ Déployé sur Vercel</div>
+    <h1>Bonjour&nbsp;!</h1>
+    <p class="subtitle">
+      Ce site a été créé et déployé automatiquement avec
+      <strong>Claude Code</strong> et la CLI <strong>Vercel</strong>.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h2>⚡ Rapide</h2>
+        <p>Servi depuis le réseau edge mondial de Vercel.</p>
+      </div>
+      <div class="card">
+        <h2>🔒 Sécurisé</h2>
+        <p>HTTPS automatique, sans configuration.</p>
+      </div>
+      <div class="card">
+        <h2>🚀 Évolutif</h2>
+        <p>Prêt à accueillir un framework (Next.js, Vite…) quand vous voulez.</p>
+      </div>
+    </div>
+    <footer>
+      <p>Déployé le <span id="date"></span></p>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('date').textContent =
+      new Date().toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
